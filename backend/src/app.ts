@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { errorHandler } from './middlewares/error-handler';
-import movieRouter from '../src/routes/movie.routes'
+import movieRouter from './routes/movie.routes'
 
 const app=express();
 const allowedOrgins=process.env.CLIENT_URL
